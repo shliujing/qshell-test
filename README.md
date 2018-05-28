@@ -3,7 +3,7 @@
 1. 熟悉存储API、熟悉qshell全部命令的使用
 2. 方便快速解答客户提出的任何有关qshell的FAQ
 3. 记录了输入命令和输出结果图，方便理解，也可以作为他人快速理解的材料
-4. 为后期集成到内部测试的 web 系统做准备
+4. 为后期集成到内部测试的 web 系统做准备，文档及操作的文件在放在Github：https://github.com/shliujing/qshell-test
 
 七牛API服务的命名行测试工具，参考文档 七牛开发者中心 [命令行工具(qshell)
 ](https://developer.qiniu.com/kodo/tools/1302/qshell#4)
