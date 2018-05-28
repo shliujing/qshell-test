@@ -149,7 +149,9 @@ qshell fput test-pub test/test-fput.ppt /Users/jingliu/Desktop/test-fput.mp4 htt
 
 以分片上传的方式上传一个文件，前缀，路径，上传入口 覆盖 低频
 
-qshell rput test-pub test/qiniu-introduce-4M.pdf /Users/jingliu/Desktop/qshell-test/fput/test-fput.mp4 http://upload.qiniu.com true 1
+qshell rput test-pub test/qiniu-introduce-4M.pdf /Users/jingliu/Desktop/
+
+qshell-test/fput/test-fput.mp4 http://upload.qiniu.com true 1
 
 ![](http://img-lj.oss-cn-hangzhou.aliyuncs.com/18-5-25/94256562.jpg)
 
@@ -384,6 +386,7 @@ qshell tms2d 1427252311000
 如果可以设置指定时间就好了。
 
 qshell d2ts 3600
+
 qshell d2ts -3600
 
 ![](http://img-lj.oss-cn-hangzhou.aliyuncs.com/18-5-25/93798932.jpg)
