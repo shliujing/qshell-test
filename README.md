@@ -1,13 +1,12 @@
+七牛API服务的命名行测试工具，参考文档 七牛开发者中心 [命令行工具(qshell)
+](https://developer.qiniu.com/kodo/tools/1302/qshell#4)
+
 ## 实践目的
 
 1. 熟悉存储API、熟悉qshell全部命令的使用
 2. 方便快速解答客户提出的任何有关qshell的FAQ
 3. 记录了输入命令和输出结果图，方便理解，也可以作为他人快速理解的材料
-4. 为后期集成到内部测试的 web 系统做准备，文档及操作的文件在放在Github：https://github.com/shliujing/qshell-test
-
-
-七牛API服务的命名行测试工具，参考文档 七牛开发者中心 [命令行工具(qshell)
-](https://developer.qiniu.com/kodo/tools/1302/qshell#4)
+4. 为后期集成到内部测试的 web 系统做准备，文档及操作的文件在放在[Github](https://github.com/shliujing/qshell-test)
 
 ## 目录
 
@@ -16,7 +15,7 @@
 - account/stat 账号文件类
     - account
     - stat
-- buckets/listbucket/domains/ip/unzip/qetag bucket等通用类
+- buckets/listbucket/domains/ip/unzip/qetag bucket等通用操作类
     - buckets
     - listbucket
     - domains
@@ -76,7 +75,7 @@ qshell stat test-pub test/test-fput.mp4
 
 ![](http://img-lj.oss-cn-hangzhou.aliyuncs.com/18-5-25/78416146.jpg)
 
-## buckets/listbucket/domains/ip/unzip/qetag bucket等通用类
+## buckets/listbucket/domains/ip/unzip/qetag bucket等通用操作类
 
 ### buckets
 
@@ -205,9 +204,9 @@ qshell qupload  1 /Users/jingliu/Desktop/config.json
 
 ## chgm/copy/move/delete 文件操作类
 
-修改七牛空间中的一个文件的MimeType，文件类型。
-
 ### chgm
+
+修改七牛空间中的一个文件的MimeType，文件类型。
 
 qshell chgm test-pub 11.mp4 video/mov
 
@@ -217,7 +216,7 @@ qshell chgm test-pub 11.mp4 video/mov
 
 复制七牛空间中的一个文件，可以是同一个控件
 
-`qshell copy [-overwrite] <SrcBucket> <SrcKey> <DestBucket> [<DestKey>]``
+`qshell copy [-overwrite] <SrcBucket> <SrcKey> <DestBucket> [<DestKey>]`
 
 不同区域，报错400
 
