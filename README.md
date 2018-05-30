@@ -5,6 +5,7 @@
 3. 记录了输入命令和输出结果图，方便理解，也可以作为他人快速理解的材料
 4. 为后期集成到内部测试的 web 系统做准备，文档及操作的文件在放在Github：https://github.com/shliujing/qshell-test
 
+
 七牛API服务的命名行测试工具，参考文档 七牛开发者中心 [命令行工具(qshell)
 ](https://developer.qiniu.com/kodo/tools/1302/qshell#4)
 
@@ -216,7 +217,7 @@ qshell chgm test-pub 11.mp4 video/mov
 
 复制七牛空间中的一个文件，可以是同一个控件
 
-qshell copy [-overwrite] <SrcBucket> <SrcKey> <DestBucket> [<DestKey>]
+`qshell copy [-overwrite] <SrcBucket> <SrcKey> <DestBucket> [<DestKey>]``
 
 不同区域，报错400
 
@@ -268,7 +269,7 @@ qshell fetch https://www.baidu.com/img/bdlogo.png test-pub bpng/dlog.png
 
 sync指令的基本原理是使用Range方式按照4MB一个块从资源服务器获取数据，然后使用七牛支持的分片上传功能直接传到七牛存储空间中。并不用担心网络中断导致的同步中断，因为采用了分片上传的机制，我们会把每一个成功上传的块的位置记录下来，当下次网络恢复的时候，只需要运行原始命令即可从断点处恢复。
 
-qshell sync <SrcResUrl> <Bucket> <Key> [<UpHostIp>]
+`qshell sync <SrcResUrl> <Bucket> <Key> [<UpHostIp>]`
 
 ```
 UpHostIp #获取，指定ip可减少DNS环节，提升同步速度
